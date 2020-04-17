@@ -1,4 +1,4 @@
-# mysql-sf
+# Docker Mysql Custom Config
 docker from mysql di custom sedikit banget konfignya
 ## cara pake
 docker-compose up -d
