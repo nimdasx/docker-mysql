@@ -1,21 +1,21 @@
 version: "3.7"
 services:
-    mysql-sf:
-        container_name: mysql-sf
-        image: nimdasx/mysql-sf
-        ports:
-            - 3306:3306
-        volumes:
-            - data:/var/lib/mysql
-        networks:
-            - sf_network
-        environment:
-            - MYSQL_ROOT_PASSWORD=q
-            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-        restart: always
-networks:
-    sf_network:
-        name: sf_network
+  mysikil:
+    container_name: sf-mysql
+    image: nimdasx/sf-mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - data:/var/lib/mysql
+    networks:
+      - bridge
+    environment:
+      - MYSQL_ROOT_PASSWORD=q
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    restart: always
+#networks:
+#    sf_network:
+#        name: sf_network
 volumes:
-    data:
-
+  data:
+#    external: true
