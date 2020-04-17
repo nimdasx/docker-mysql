@@ -1,6 +1,7 @@
 # mysql-sf
-docker from mysql di custom sedikit banget
+docker from mysql di custom sedikit banget konfignya
 ## cara pake
 docker-compose up -d
-## kalo mau build sendiri
-docker build --tag nimdasx/mysql-sf .
+## catatan sendiri
+docker build --tag nimdasx/mysql-sf . \
+docker push nimdasx/mysql-sf
