@@ -8,14 +8,14 @@ services:
     volumes:
       - data:/var/lib/mysql
     networks:
-      - bridge
+      - sf-net
     environment:
       - MYSQL_ROOT_PASSWORD=q
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     restart: always
-#networks:
-#    sf_network:
-#        name: sf_network
+networks:
+  sf-net:
+    name: sf-net
 volumes:
   data:
 #    external: true
