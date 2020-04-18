@@ -6,7 +6,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - data:/var/lib/mysql
+      - sf-mysql-data:/var/lib/mysql
     networks:
       - sf-net
     environment:
@@ -17,5 +17,5 @@ networks:
   sf-net:
     name: sf-net
 volumes:
-  data:
-#    external: true
+  sf-mysql-data:
+    external: true
