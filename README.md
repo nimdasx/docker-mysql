@@ -4,6 +4,3 @@ docker from mysql di custom sedikit banget konfignya
 silahkan edit `docker-compose.yml` sesuai kebutuhan  
 kalo udah jalankan pakai perintah :  
 `docker-compose up -d`
-## catatan pribadi / abaikan saja
-`docker build --tag nimdasx/sf-mysql . `  
-`docker push nimdasx/sf-mysql`
