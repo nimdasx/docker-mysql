@@ -1,4 +1,4 @@
-FROM mysql
+FROM mysql:latest
 
 LABEL maintainer="nimdasx@gmail.com"
 LABEL description="Mysql latest di custom sedikit"

@@ -1,8 +1,9 @@
 version: "3.7"
 services:
   mysikil:
-    container_name: sf-mysql
-    image: nimdasx/sf-mysql
+    build: .
+    container_name: sf-mysql-container
+    image: nimdasx/sf-mysql:latest
     ports:
       - 3306:3306
     volumes:
